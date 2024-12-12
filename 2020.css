@@ -1,0 +1,155 @@
+@font-face {
+    font-family: Nintendo-DS-BIOS;
+    src: url(https://dl.dropbox.com/s/vlxjtnvrl9s0snp/Nintendo-DS-BIOS.ttf);
+    }
+  
+    #Nintendo-DS-BIOS {
+      font-family: Nintendo-DS-BIOS;
+      }
+  
+  body {
+    font-family:'Nintendo-DS-BIOS';
+    cursor: url(https://cursors2.totallyfreecursors.com/thumbnails/brown1.gif), auto;
+  
+    max-width: 120ch;
+    min-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    padding-bottom: 0;
+    width: 800px;
+  
+    background: url(https://i.pinimg.com/736x/30/02/76/3002761d7c1e0eaa3968a3daef9c10c8.jpg);
+    background-size: 300px;
+    display: grid;
+    grid-template:
+    "header  header  header"
+    "nav     main    sidebar"
+    "nav2    main2   sidebar2"
+    "nav3    main3   sidebar3"
+    "footer  footer  footer" /
+     100px    1fr    100px;
+    grid-gap: 20px 40px;
+  
+    &::before {
+        content: '';
+        display: block;
+        grid-area: divider;
+      }
+      
+      > header {
+        grid-area: header;
+      }
+  }
+  
+  .header {
+    display: grid;
+    grid-template: 
+      "...... ........... ......" 1fr
+      "...... "primary-links" auto"
+      "...... ........... ......" 1fr /
+      200px 1fr         200px;
+    grid-gap: 0 40px;
+  }
+
+  .skele {
+    position: absolute;
+    left: 570px;
+    top: 10px;
+  }
+
+  .dash-img {
+    position: absolute;
+    left: 470px;
+    top: 120px;
+  }
+  
+  .primary-links {
+    grid-area: primary-links;
+  
+  
+    background: #333a3c;
+    box-shadow: .5px .5px 10px #1e282a inset;
+  
+    border-radius: 10px;
+    text-shadow: .5px .5px 3px #1e282a;
+  
+  
+  
+    display: block;
+    padding: 0px 100px;
+    border-radius: 20px;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 15em;
+    position: relative;
+    font-size: 20px;
+  
+    ul {
+      display: flex;
+      list-style: none;
+      padding: 5px;
+      margin: 15ox;
+    }
+      
+    li {
+        margin: 5px;
+        display: flex;
+        text-align: center;
+    }
+      
+    a {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      color: #a6ddd1;
+      text-decoration: wavy;
+      padding: 1px 5px;
+      margin-left: 7px;
+    }
+  }
+  
+  a:hover {
+    text-decoration:wavy;
+    color:#bcf17e;
+  }
+  
+  a {
+    color: #496749;
+  }
+  
+  .main-body {
+      grid-area: main;
+      border-radius: 10px;
+      background-color: #cee6c9;
+      background-clip: padding-box;
+
+      margin-bottom: 200px;
+      padding: 30px;
+      padding-right: 120px;
+      box-shadow: .5px .5px 10px #3a5a5e inset;
+  
+      text-align: left;
+      font-size: 20px;
+  }
+
+  .head {
+    text-align: center;
+    margin-left: 100px;
+  }
+  
+
+  .med-list {
+    text-align: center;
+    margin-left: 100px;
+  }
+
+  .med-button {
+    background-color: #e0f6e3;
+    border: none;
+
+
+
+    font-family: Nintendo-DS-BIOS;
+  }

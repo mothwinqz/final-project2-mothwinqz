@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+   <html lang="en">
+       <head>
+           <title>hya's den</title>
+           <link rel="stylesheet" href="2020.css">
+       </head>
+      
+       <body>
+        <script src="test.js"></script>
+        <script>
+            function openCity(cityName) {
+              var i;
+              var x = document.getElementsByClassName("city");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              document.getElementById(cityName).style.display = "block";  
+            }
+            </script>
+        <header>
+            <img class="skele" src="https://files.catbox.moe/tuxex0.gif"width=300px>
+            <img class="dash-img" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a68f6641-8f1f-4e21-ace5-7cb6185a61c8/d8psys7-a8d753c1-51db-44b1-a496-5fb7ecf5f862.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2E2OGY2NjQxLThmMWYtNGUyMS1hY2U1LTdjYjYxODVhNjFjOFwvZDhwc3lzNy1hOGQ3NTNjMS01MWRiLTQ0YjEtYTQ5Ni01ZmI3ZWNmNWY4NjIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.893uLhpMDe7XlGDTBV0eUMdlsQ-xYs0Hp3k2L6xQt8c" width="100px">
+            <nav class="primary-links">
+                <ul>
+                    <li><a href="/index.html">home</a></li>
+                    <li><a href="/about.html">about me</a></li>
+                    <li><a href="/tos.html">comms</a></li>
+                    <li><a href="/credit.html">credits</a></li>
+                </ul>
+            </nav>
+        </header>
+
+            <main class="main-body">
+                <div class="med-list">
+                    <button class="med-button" onclick="openCity('digital')"><h2>DIGITAL</h2></button>
+                    <button class="med-button" onclick="openCity('trad')"><h2>TRAD</h2></button>
+                    <button class="med-button" onclick="openCity('animation')"><h2>ANIMATION</h2></button>
+                  </div>
+
+                <div id="digital" class="city">
+                    <h2 class="head">DIGITAL ART!!</h2>
+                    <p>wip</p>
+                  </div>
+                  
+                  <div id="trad" class="city" style="display:none">
+                    <h2 class="head">TRADITIONAL ART!!</h2>
+                    <p>wip</p>
+                  </div>
+                  
+                  <div id="animation" class="city" style="display:none">
+                    <h2 class="head">ANIMATIONS!!</h2>
+                    <p>wip</p>
+                  </div>
+
+            </main>
+       </body>
+   </html>
