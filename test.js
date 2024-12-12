@@ -9,3 +9,9 @@ function openCity(cityName) {
     }
     document.getElementById(cityName).style.display = "block";
   }
+
+  <a href="index.html" onclick="window.open('example.html', '_self');">
+home
+
+
+</a>
